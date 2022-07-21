@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&display=swap');
+
+
+.textform-main {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.textform-form {
+    margin-bottom: 10px;
+}
+
+.textform-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.textform-summary h2, .textform-textPreview h2 {
+    font-size: 1.5rem;
+    padding-bottom: 6px;
+}
+
+.textform-summary {
+    padding: 10px 0;
+}
+
+.textform-textPreview {
+    padding: 10px 0;
+    overflow-wrap: break-word;
+}
+
+
+.textform-textarea {
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.textform-textarea:focus {
+    outline: none;
+    box-shadow: 0 3px 3px 6px rgba(0, 76, 255, 0.275);
+}
+
+
+.textformBtn {
+    padding: 4px 6px;
+   background-color: rgba(18, 80, 224, 0.857);
+    font-size: 1.2rem;
+    color: white;
+    margin: 4px;
+    border: 1px solid #999;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.textformBtn:hover {
+   background-color: rgb(0, 76, 255);
+    
+}
+
+.textform-textarea {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+    .textform-header h2 {
+        font-size: 1.8rem;
+    }
+    .textformBtn {
+        font-size: 1rem;
+    }
+    .textform-textarea {
+        font-size: 17px;
+    }
+}

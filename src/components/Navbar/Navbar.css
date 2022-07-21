@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+
+ul {
+    list-style-type: none;
+}
+
+.navbar-main {
+    background-color: black;
+    color: white;
+    font-family: Montserrat;
+    padding: 0 2rem;
+    
+}
+
+.navbar-section1 {
+    display: flex;
+   
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+
+.navbar-section2 {
+    display: none;
+}
+
+.navbar-list1 {
+    display: flex;
+   
+}
+.navbar-listItem {
+    padding: 15px 14px;
+    font-size: 1.2rem;
+}
+
+.navbar-listItem:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.navbar-colorItem {
+    height: 35px;
+    width: 35px;
+    border: 2px solid rgb(252, 147, 0);
+    cursor: pointer;
+    margin: 12px 10px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.navbar-list3 {
+    display: flex;    
+}
+.navbar-primary {
+    background-color: blue;
+    color: white;
+}
+.navbar-danger {
+    background-color: red;
+    color: white;
+}
+.navbar-warning {
+    background-color: yellow;
+    color: black;
+}
+.navbar-success {
+    background-color: green;
+    color: white;
+}
+.navbar-light {
+    background-color: white;
+    color: black;
+}
+.navbar-dark {
+    background-color: black;
+    color: white;
+}
+.navbar-primary textarea, .navbar-danger textarea, .navbar-success textarea, .navbar-warning textarea, .navbar-dark textarea {
+    background-color: #042743;
+    color: white;
+}
+.navbar-light textarea {
+    background-color: white;
+    color: black;
+}
+.navbar-dark .navbar-main {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    #navbarMenu {
+        display: block;
+        width: 100%;
+    }
+    .navbar-section2.openIcon {
+        display: block;  
+    }
+    .navbar-list1 .navbar-listItem:not(:first-child) {
+        display: none;
+    }
+}
+@media screen and (min-width: 767px) {
+    .navbar-main {
+        display: flex;
+        justify-content: space-between;
+    }
+   .navbar-aside2 {
+        display: none;
+   } 
+   .navbar-section2 {
+    display: block;
+   
+}
+
+  
+}
